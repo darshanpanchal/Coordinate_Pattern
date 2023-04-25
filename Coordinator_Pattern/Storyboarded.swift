@@ -1,6 +1,13 @@
-# Coordinate_Pattern
-Coordinate  Design Pattern for ViewController Navigation
-#Easy way for storyboard Instantiate
+//
+//  Storyboarded.swift
+//  Coordinator_Pattern
+//
+//  Created by Darshan on 25/04/23.
+//
+
+import Foundation
+import UIKit
+
 protocol Storyboarded{
     static func instantiate() -> Self
 }
@@ -13,3 +20,4 @@ extension Storyboarded where Self:UIViewController{
         return objViewController
     }
 }
+
